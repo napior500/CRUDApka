@@ -1,0 +1,33 @@
+﻿
+@{
+	ViewBag.Title = "ImportFromCsv";
+}
+
+<h2>Import/Eksport csv</h2>
+
+@using (Html.BeginForm("ImportFromCsv", "Test", FormMethod.Post))
+{
+	
+<div class="form-group">
+	<input type="file" name="File" id="File" />
+	<label for="importcsv">Importuj klientów</label>
+	<input type="submit" name="submit" value="import" id="importcsv" class="btn btn-default" />
+</div>
+			
+		
+			
+			
+	
+}
+
+
+@using (Html.BeginForm("ExportFromCode", "Test", FormMethod.Get))
+{
+	
+<div class="form-group">
+	<label for="exportcsv">Eksportuj klientów</label>
+	<input type="submit" name="submit" value="export" id="exportcsv" class="btn btn-default" />
+</div>
+			
+	
+}
